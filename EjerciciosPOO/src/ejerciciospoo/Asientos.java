@@ -4,7 +4,7 @@ public class Asientos {
     private int numero;
     private boolean reservado;
     
-    public void Asiento(int numero, boolean reservado){
+    public Asientos(int numero){
         this.numero=numero;
         this.reservado=false;
     }
