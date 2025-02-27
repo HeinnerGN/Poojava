@@ -3,13 +3,22 @@ package ejerciciospoo;
 
 public class Usuario {
     private static String Nombre;
-    private static int Edad;
-    private static int Cedula;
+    private static int Asientosreserv;
     
-    public void Usuario(String Nombre, int Edad, int Cedula){
+    public Usuario(String Nombre, int Asientosreserv){
         Usuario.Nombre=Nombre;
-        Usuario.Edad=Edad;
-        Usuario.Cedula=Cedula;
+        Usuario.Asientosreserv = -1;
     }
     
+    public String getNombre(){
+        return Nombre;
+    }
+    
+    public int Asientosreserv(){
+        return Asientosreserv;
+    }
+    
+    public void reservarAsientos(int Asiento){
+        Usuario.Asientosreserv=Asiento;
+    }
 }
