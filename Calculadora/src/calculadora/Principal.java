@@ -38,11 +38,9 @@ public class Principal {
                     continue;
             }
 
-            // Mostrar el resultado
             System.out.println("El resultado de la operacion es: " + resultado);
 
-            // Preguntar al usuario si desea hacer otro cálculo
-            System.out.println("Quieres realizar otro calculo? (sí/no): ");
+            System.out.println("Quieres hacer otra operacion? (si/no): ");
             String respuesta = dato.next().toLowerCase();
             if (respuesta.equals("no")) {
                 System.out.println("Saliendo del programa.");
