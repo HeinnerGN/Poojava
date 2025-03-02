@@ -23,7 +23,7 @@ public class Sensor_temperatura {
             System.out.println("Quiere continuar? (si/no): ");
             String info = scanner.next().toLowerCase();
             if (info.equals("no")) {
-                System.out.println("Simulacion terminada");
+                System.out.println("Saliendo.");
                 break;
             }
         }
