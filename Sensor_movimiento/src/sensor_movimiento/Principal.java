@@ -3,6 +3,7 @@ package sensor_movimiento;
 public class Principal {
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        Sensores_movimiento sensor = new Sensores_movimiento();
+        Alarma alarma = new Alarma();
     }   
 }
