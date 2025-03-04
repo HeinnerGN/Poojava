@@ -20,5 +20,9 @@ public class Alarma {
         }
         else
             System.out.println("La alarma no ha detectado nada.");
-    } 
+    }
+    
+    public boolean Activa(){
+        return alarma;
+    }
 }
