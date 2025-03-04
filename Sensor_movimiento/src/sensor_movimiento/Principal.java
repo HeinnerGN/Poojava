@@ -15,35 +15,37 @@ public class Principal {
         boolean continuar = true;
 
         while (continuar) {
-            System.out.println("Sistema de Seguridad - Detección de Intrusos");
+            System.out.println("Sistema de Seguridad - Deteccion de Intrusos");
             System.out.println("1. Activar / Desactivar alarma");
             System.out.println("2. lectura de sensores");
             System.out.println("3. Salir");
-            System.out.print("Elige una opcion: ");
+            System.out.println("Elige una opcion: ");
             int opcion = scanner.nextInt();
 
             switch (opcion) {
                 case 1:
-                    System.out.print("Quieres activar o desactivar la alarma? (activar/desactivar): ");
+                    System.out.println("Quieres activar o desactivar la alarma? (activar/desactivar): ");
                     String info = scanner.next().toLowerCase();
-                    if (info.equals("activar")) {
+                    if (info.equals("activar")){
                         denoche = true; 
-                    } else if (info.equals("desactivar")) {
+                    }
+                    else if (info.equals("desactivar")){
                         denoche = false;
-                    } else {
+                    }
+                    else {
                         System.out.println("Opcion no valida.");
                     }
                     break;
 
                 case 2:
-                    boolean movimientoSensor1 = sensor1.detectarmovi();
-                    boolean movimientoSensor2 = sensor2.detectarmovi();
-                    boolean movimientoSensor3 = sensor3.detectarmovi();
-                    System.out.println("Sensor 1 detecto movimiento: " + movimientoSensor1);
-                    System.out.println("Sensor 2 detecto movimiento: " + movimientoSensor2);
-                    System.out.println("Sensor 3 detecto movimiento: " + movimientoSensor3);
+                    boolean movimiento1 = sensor1.detectarmovi();
+                    boolean movimiento2 = sensor2.detectarmovi();
+                    boolean movimiento3 = sensor3.detectarmovi();
+                    System.out.println("Sensor 1 detecto movimiento: " + movimiento1);
+                    System.out.println("Sensor 2 detecto movimiento: " + movimiento2);
+                    System.out.println("Sensor 3 detecto movimiento: " + movimiento3);
 
-                    alarma.Control(movimientoSensor1, movimientoSensor2, movimientoSensor3, denoche);
+                    alarma.Control(movimiento1, movimiento2, movimiento3, denoche);
                     break;
 
                 case 3:
