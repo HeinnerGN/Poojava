@@ -1,22 +1,13 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package control_luces;
 
+/**
+ *
+ * @author heinn
+ */
 public class Luces {
-    private boolean luces;
     
-    public Luces(){
-        this.luces=false;
-    }
-    
-    public void Encender(boolean denoche, boolean haymovi){
-        if (denoche && haymovi){
-            this.luces=true;
-        }
-        else {
-            this.luces=false;
-        }
-    }
-    
-    public boolean getEstadoluces(){
-        return luces;
-    }
 }

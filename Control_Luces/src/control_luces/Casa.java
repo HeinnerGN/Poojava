@@ -1,16 +1,13 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package control_luces;
 
-import java.util.Random;
-
+/**
+ *
+ * @author heinn
+ */
 public class Casa {
-    private boolean denoche;
-    private boolean haymovi;
-    
-    public Casa(){
-        Random dato = new Random();
-        denoche = dato.nextBoolean();
-        haymovi = dato.nextBoolean();
-    }    
-    
     
 }

@@ -1,17 +1,20 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
 package control_luces;
 
+/**
+ *
+ * @author heinn
+ */
 public class Principal {
 
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        Luces luces = new Luces();
-        Casa casa = new Casa();
-    }
-    
-    public void Detectar(){
-        continuar = false;
-        while (continuar){
-            
-        }
+        // TODO code application logic here
     }
     
 }
