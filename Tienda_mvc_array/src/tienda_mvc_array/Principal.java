@@ -1,8 +1,10 @@
-package tienda;
+package tienda_mvc_array;
+
 
 public class Principal {
 
     public static void main(String[] args) {
-        Cliente.procesardatos();
+        System.out.println("entrando");
     }
+    
 }
